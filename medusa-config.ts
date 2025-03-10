@@ -9,6 +9,7 @@ module.exports = defineConfig({
     workerMode: process.env.MEDUSA_WORKER_MODE as "shared" | "worker" | "server",
     admin: {
     disable: process.env.DISABLE_MEDUSA_ADMIN === "true",
+      backendUrl: process.env.MEDUSA_BACKEND_URL,
   
 
     http: {
